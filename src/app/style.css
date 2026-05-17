@@ -1,0 +1,43 @@
+@import "tailwindcss";
+
+@theme {
+  /* =========================================
+     AuraFit OS - Design Tokens DTCG (OKLCH)
+     ========================================= */
+  
+  /* Fondos y Superficies (Soft-Dark Mode para OLED) */
+  --color-background: oklch(0.16 0.01 260); /* Fondo principal inmersivo */
+  --color-surface: oklch(0.20 0.015 260); /* Tarjetas base */
+  --color-surface-elevated: oklch(0.25 0.02 260); /* Tarjetas flotantes / Modales */
+  
+  /* Acentos y Marca */
+  --color-primary: oklch(0.65 0.20 160); /* Verde/Cyan Aura (Movilidad/Fuerza) */
+  --color-accent-streak: oklch(0.70 0.20 30); /* Naranja Fuego (Rachas) */
+  
+  /* Tipografía (Optimizada para APCA) */
+  --color-text-primary: oklch(0.95 0.01 260); /* Texto de alto contraste */
+  --color-text-secondary: oklch(0.70 0.02 260); /* Texto de apoyo / Metadatos */
+
+  /* Tipografía fluida (Variables listas para fuentes dinámicas) */
+  --font-sans: 'Inter Variable', system-ui, -apple-system, sans-serif;
+}
+
+@layer base {
+  :root {
+    background-color: var(--color-background);
+    color: var(--color-text-primary);
+    color-scheme: dark;
+    font-family: var(--font-sans);
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    text-rendering: optimizeLegibility;
+  }
+
+  body {
+    margin: 0;
+    /* Evita el rebote de scroll (overscroll bounce) en PWA móviles */
+    overscroll-behavior-y: none;
+    /* Prepara el body para animaciones GPU-accelerated */
+    will-change: background-color;
+  }
+}
