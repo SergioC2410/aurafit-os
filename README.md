@@ -1,0 +1,2 @@
+# aurafit-os
+AuraFit OS es una aplicación web progresiva (PWA) híbrida de optimización física, nutrición y biomecánica. Opera bajo una arquitectura 100% Client-Side (Offline-first) y unificada para optimizar el rendimiento en hardware de recursos controlados (8 GB de RAM). Fusiona el tracking de fuerza reactivo de Hevy, el control nutricional adaptativo de Fitia y las auditorías de movilidad funcional de Symmetry en un único entorno coordinado.
