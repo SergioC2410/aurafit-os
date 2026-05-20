@@ -54,7 +54,6 @@
 </template>
 
 <script setup lang="ts">
-// Subimos dos niveles (../../) para salir de app/views/ y entrar a shared/
 import Button from '../../shared/ui/Button.vue'
 import Card from '../../shared/ui/Card.vue'
 import { DumbbellIcon, FlameIcon, AppleIcon, ActivityIcon, UserIcon } from 'lucide-vue-next'
